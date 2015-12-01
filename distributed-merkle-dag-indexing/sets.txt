@@ -1,0 +1,21 @@
+{ name: sally, year: 2006 }
+{ name: megan, year: 2008 }
+'-> { name: fred, year: 2008 }
+    { name: bob, year: 2006 }
+'-> { name: alice, year: 2006 }
+'-> { name: alice, year: 2005 }
+    { name: sandy, year: 1999 }
+{ name: greg, year: 2005 }
+
+1999: sandy
+2005: greg, alice[2]
+2006: sally, alice[1]
+2008: megan, fred
+
+{ name: alice, year: 2005 }
+
+1999: sandy
+2005: greg, alice
+2006: sally
+2008: megan, fred
+
